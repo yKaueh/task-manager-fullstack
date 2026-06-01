@@ -1,0 +1,34 @@
+.create-task-section{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.input-create-task{
+    flex: 1;
+    min-width: 0;
+}
+
+.input-create-task, .btn-create-task{
+    height: 30px;
+}
+.btn-create-task{
+    font-size: var(--font-lg);
+    font-weight: 700;
+    text-shadow: (var(--shadow-sm));
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 400px) {
+    .create-task-title{
+        font-size: 20px;
+    }
+    .btn-create-task{
+        font-size: 14px;
+        padding: 0 8px;
+    }
+}

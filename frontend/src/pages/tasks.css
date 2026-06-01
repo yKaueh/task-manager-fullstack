@@ -1,0 +1,23 @@
+.task-controls-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+
+  background: var(--color-bg);
+  box-shadow: var(--shadow-sm);
+}
+
+.task-list-section {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+
+  background: var(--color-bg);
+  box-shadow: var(--shadow-md);
+}

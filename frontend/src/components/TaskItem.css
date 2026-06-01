@@ -1,0 +1,90 @@
+.task{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-sm);
+  margin-bottom: .3rem;
+  padding: .5rem;
+}
+
+.task.done{
+  text-decoration: line-through;
+  opacity: .3;
+}
+.task.done button{
+  opacity: .3;
+  pointer-events: none;
+}
+
+.task, .task.done{
+  transition: opacity var(--transition-normal), text-decoration var(--transition-normal);
+}
+
+.task-status{
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--transition-slow);
+}
+.task-status:hover{
+  background-color: var(--color-info);
+}
+.task.done .task-status{
+  background-color: var(--color-info-dark);
+}
+
+
+.task-status, .task-controls{
+  display: flex;
+  align-items: center;
+}
+
+.task-content{
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  align-items: flex-start;
+  padding: 0 .5rem;
+}
+
+.btn-edit, .btn-delete, .btn-save, .btn-cancel{
+  text-shadow: var(--text-shadow-xl);
+  padding: 4px 4px;
+  font-size: 13px;
+  margin-left: 3px;
+}
+
+.task-title, .input-edit {
+  width: 100%;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: inherit;
+  color: inherit;
+  margin: 0;
+  overflow-wrap: anywhere;
+  padding-right: 1rem;
+}
+
+.input-edit {
+  resize: none;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  min-height: 23.8px;
+  resize: none;
+}
+.input-edit:focus{
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
