@@ -18,5 +18,5 @@ app.use('/auth', authRoutes)
 app.use('/tasks', tasksRoutes)
 
 app.listen(PORT, () => {
-    console.log(`http://localhost:${PORT}`)
+    console.log(`Servidor rodando na porta ${PORT}`)
 })
