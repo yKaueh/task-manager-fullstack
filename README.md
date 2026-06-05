@@ -22,10 +22,14 @@ Sistema de gerenciamento de tarefas com autenticação JWT.
 
 ### Backend
 
+```bash
 npm install
 npm start
+```
 
 ### Frontend
 
+```bash
 npm install
 npm run dev
+```
