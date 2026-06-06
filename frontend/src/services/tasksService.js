@@ -78,7 +78,7 @@ export async function updateTask(token, id, title) {
 
 export async function toggleTaskStatus(token, id) {
     const res = await fetch(`${API_URL}/tasks/toggle`, {
-        method: 'POST',
+        method: 'PATCH',
         headers: {
             Authorization: `Bearer ${token}`,
             'Content-Type': 'application/json'
