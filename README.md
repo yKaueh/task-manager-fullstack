@@ -59,9 +59,19 @@ Backend: https://task-manager-fullstack-ckbo.onrender.com/
 
 ![Tasks](./screenshots/tasks.png)
 
-## Arquitetura
+## Arquitetura Técnica (Resumo)
 
-Frontend (React) → Backend (Express) → MySQL (Aiven)
+Fluxo resumido do sistema:
+
+1. **Frontend (React)** → envia requisições HTTP com JWT.
+2. **Routes (Express)** → definem endpoints e aplicam middleware de autenticação.
+3. **Controllers** → recebem requisições, chamam Services e retornam respostas.
+4. **Services** → lógica de negócio: CRUD de tarefas, toggle status, login/logout.
+5. **Banco de Dados (MySQL/Aiven)** → armazena usuários e tarefas.
+
+Visual rápido:
+
+👤 Usuário → 🖥️ Frontend → 🚪 Routes → 🧩 Controllers → ⚙️ Services → 💾 MySQL → 🔙 Resposta
 
 ## Variáveis de Ambiente
 
