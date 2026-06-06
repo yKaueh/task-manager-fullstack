@@ -61,11 +61,7 @@ Backend: https://task-manager-fullstack-ckbo.onrender.com/
 
 ## Arquitetura
 
-Frontend (React)
-↓
-Backend (Express)
-↓
-MySQL (Aiven)
+Frontend (React) → Backend (Express) → MySQL (Aiven)
 
 ## Variáveis de Ambiente
 
