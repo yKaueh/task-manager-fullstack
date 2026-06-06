@@ -36,7 +36,7 @@ export async function updateTaskService(userId, id, title) {
 
     const [rows] = await db.query('SELECT status FROM tasks WHERE id = ? AND user_id = ?', [id, userId])
     if(rows.length === 0) return null
-    const status = rows[0].statusrs
+    const status = rows[0].status
 
     return {
         id,

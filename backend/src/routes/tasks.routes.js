@@ -15,6 +15,6 @@ router.get('/', authMiddleware, getTasksController)
 router.post('/', authMiddleware, createTaskController)
 router.delete('/:id', authMiddleware, deleteTaskController)
 router.put('/:id', authMiddleware, updateTaskController)
-router.post('/toggle', authMiddleware, toggleTaskStatusController)
+router.patch('/toggle', authMiddleware, toggleTaskStatusController)
 
 export default router;
