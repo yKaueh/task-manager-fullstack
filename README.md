@@ -15,7 +15,6 @@ Backend: https://task-manager-fullstack-ckbo.onrender.com/
 * React
 * React Router
 * Vite
-* CSS
 
 ### Backend
 
