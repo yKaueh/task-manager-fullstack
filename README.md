@@ -6,8 +6,6 @@ Aplicação Full Stack para gerenciamento de tarefas com autenticação JWT, des
 
 Frontend: https://task-manager-fullstack-rho-lilac.vercel.app/
 
-Backend: https://task-manager-fullstack-ckbo.onrender.com/
-
 ## Tecnologias Utilizadas
 
 ### Frontend
